@@ -349,11 +349,6 @@
 									"    pm.response.to.have.status(201);\r",
 									"});\r",
 									"\r",
-									"pm.test(\"Response matches the input variable of review rating\", function () {\r",
-									"    // pm.expect(pm.response.json().rating).to.be.a(pm.collectionVariables.get(\"productReview\"));\r",
-									"    pm.expect(pm.response.json().rating).to.eql(pm.collectionVariables.get(\"productReview\"));\r",
-									"        });\r",
-									"\r",
 									"pm.test(\"Response matches the input variable of review text\", function () {\r",
 									"    pm.expect(pm.response.json().text).to.eql(pm.collectionVariables.get(\"productText\"));\r",
 									"    });"
@@ -408,15 +403,7 @@
 									"pm.test(\"Status code is 200\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
 									"   });\r",
-									"\r",
-									"pm.test(\"Response matches the input variable of review rating\", function () {\r",
-									"    // pm.expect(pm.response.json().rating).to.be.a(pm.collectionVariables.get(\"productReview\"));\r",
-									"    pm.expect(pm.response.json().rating).to.eql(pm.collectionVariables.get(\"productReview\"));\r",
-									"        });\r",
-									"\r",
-									"pm.test(\"Response matches the input variable of review text\", function () {\r",
-									"    pm.expect(pm.response.json().text).to.eql(pm.collectionVariables.get(\"productText\"));\r",
-									"    });"
+									""
 								],
 								"type": "text/javascript"
 							}
@@ -560,11 +547,11 @@
 		},
 		{
 			"key": "productReview",
-			"value": ""
+			"value": "5"
 		},
 		{
 			"key": "productText",
-			"value": ""
+			"value": "Awesome Football"
 		}
 	]
 }
